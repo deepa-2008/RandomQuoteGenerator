@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 38px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #b9c5d5;
+    margin-bottom: 35px;
+    font-size: 16px;
+}
+
+.quote-card {
+    background: rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    padding: 45px 30px;
+    border-radius: 22px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.quote-card:hover {
+    transform: translateY(-5px);
+}
+
+.quote-icon {
+    font-size: 75px;
+    color: #f6c667;
+    line-height: 1;
+}
+
+#quote {
+    font-size: 24px;
+    line-height: 1.6;
+    margin: 20px 0;
+    min-height: 75px;
+}
+
+#author {
+    color: #f6c667;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+button {
+    border: none;
+    padding: 13px 22px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.new-btn {
+    background: #f6c667;
+    color: #172337;
+}
+
+.new-btn:hover {
+    background: #ffda8b;
+    transform: scale(1.05);
+}
+
+.copy-btn {
+    background: transparent;
+    border: 1px solid #f6c667;
+    color: white;
+}
+
+.copy-btn:hover {
+    background: rgba(246, 198, 103, 0.15);
+}
+
+footer {
+    margin-top: 30px;
+    color: #b9c5d5;
+    font-size: 13px;
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    .quote-card {
+        padding: 30px 20px;
+    }
+
+    #quote {
+        font-size: 20px;
+    }
+}
